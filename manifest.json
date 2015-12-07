@@ -1,0 +1,23 @@
+{
+  "name" : "Invotra Session Management",
+  "version" : "0.8",
+  "description" : "Invotra Session Management",
+  "permissions": [ "*://*.io1test.com/*", "cookies", "declarativeContent", "activeTab", "storage" ],
+  "icons": { "16": "invotra_logo.png", "48": "invotra_logo.png", "128": "invotra_logo.png" },
+  "background": {
+    "scripts": ["background.js"],
+	"persistent":false
+  },
+  "page_action": {
+    "default_icon": "invotra_logo.png",
+	"default_title": "Invotra Session Manager",
+	"default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+	  "matches": ["*://*.io1test.com/*"],
+      "js": ["jquery-2.1.4.min.js", "content.js"]
+    }
+  ],
+  "manifest_version": 2
+}

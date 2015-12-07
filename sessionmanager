@@ -1,0 +1,9 @@
+<NotepadPlus>
+    <Project name="session manager">
+        <File name="background.js" />
+        <File name="manager.js" />
+        <File name="manifest.json" />
+        <File name="popup.html" />
+        <File name="popup.js" />
+    </Project>
+</NotepadPlus>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+	  
+	  .button {
+		width: 100%;
+		text-align: center;
+	  }
+	  
+	  .button:hover {
+		background-color:green;
+	  }
+	  
+	  [data-state=closed] {
+		display: none;
+	  }
+      [data-state=open]  {
+		display: inherit;
+	  }
+	  
+	  #noUser:hover, #noUser {
+		background: inherit;
+	  }
+	  
+      ul {
+		list-style: none;
+		width: 100%;
+		-webkit-margin-before: 0;
+		text-align: center;
+		-webkit-margin-after: 0;
+		-webkit-padding-start: 0;
+	  }
+	  
+	  ul li {
+		margin: 5px;
+		padding: 0 5px 2px 5px;
+		border: dashed black 1px;
+		border-radius: 5px;
+		background: #E4E4E4;
+	  }
+	  
+	  ul li:hover {
+		background: #DEE8DE;
+	  }
+	  
+	  #addUser {
+		text-align: center;
+	  }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+	<ul id="userList"></ul>
+	<div id="list"></div>
+    <div id="addUser">
+		<input type="button" id="button" value="Add User Category" />
+	</div>
+  </body>
+</html>
+
